@@ -1,0 +1,19 @@
+{
+  "name": "testing-thanks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rutviklhase/testing-thanks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rutviklhase/testing-thanks/issues"
+  },
+  "homepage": "https://github.com/rutviklhase/testing-thanks#readme"
+}

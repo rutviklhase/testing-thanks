@@ -1,0 +1,7 @@
+name: 'Custom action to ackknowledge the PR'
+description: 'A bit will thank you'
+author: 'Rutvik'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
