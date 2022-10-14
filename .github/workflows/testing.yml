@@ -1,23 +1,11 @@
 name: Test
-
-on:
-  pull_request:
-    types: [opened]
-
+on: [push]
 jobs:
-  test:
+  check-node-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ./
-        with:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-  
-  test2:
-    runs-on: ubuntu-latest
-    steps:
-      -uses: actions/checkout@v3
-      -uses: actions/setup-node@v3
-        with:
-          node-version:'14'
-      -run: node -v
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with: 
+          node-version: '14'
+      - run: node -v
